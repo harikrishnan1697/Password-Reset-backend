@@ -96,14 +96,14 @@ const forgotPassword = async (req, res) => {
     });
 
     const mailOptions = {
-      from: "eyegamers1234@gmail.com",
+      from: "harikrishnanmathu@gmail.com",
       to: user.email,
       subject: "Password Reset",
       html: `
         <p>Dear ${user.firstName} ${user.lastName},</p>
         <p>We received a request to reset your password. Here is your One-Time Password (OTP): <strong>${OTP}</strong></p>
         <p>Please click the following link to reset your password:</p>
-        <a href="https://password-reset-flows.netlify.app/reset-password">Reset Password</a>
+        <a href="https://forgetpasswordtask.netlify.app/forgot-password">Reset Password</a>
         <p>If you did not make this request, please ignore this email.</p>
         <p>Thank you,</p>
         <p>From Validation</p>
