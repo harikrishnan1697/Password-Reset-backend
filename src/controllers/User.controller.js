@@ -96,7 +96,7 @@ const forgotPassword = async (req, res) => {
     });
 
     const mailOptions = {
-      from: "harikrishnan476@gmail.com",
+      from: "harikrishnanmathu@gmail.com",
       to: user.email,
       subject: "Password Reset",
       html: `
